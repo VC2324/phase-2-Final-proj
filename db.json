@@ -1,0 +1,16 @@
+{
+    "portfolios":[
+        {
+            "id":1,
+            "name": "phase 2 project"
+        },
+        {
+            "id":2,
+            "name": "phase 1 project"
+        },
+        {
+            "id":3,
+            "name": "Mona Lisa"
+        }
+    ]
+}
