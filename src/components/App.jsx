@@ -1,6 +1,6 @@
-import { Outlet } from "react-router-dom"
-import Navbar from "./Navbar"
 
+import Navbar from "./Navbar"
+import { Outlet } from "react-router-dom"
 
 
 function App() {
@@ -8,11 +8,9 @@ function App() {
 
   return (
     <div> 
-       <Navbar/>
-     <h1>project lives here</h1>
-
+    <h1></h1>
+     <Navbar />
     <Outlet/>
-  
     </div>
   )
 }

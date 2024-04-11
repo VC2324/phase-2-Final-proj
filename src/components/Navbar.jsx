@@ -1,14 +1,15 @@
 import { Link } from "react-router-dom";
-import About from "./About";
+import { Outlet } from "react-router-dom"
 
 function Navbar(){
     return(
-        <div>
-            <Link to="/" ></Link>
-            <Link to="/about"></Link>
-            <Link to ="/about/portfolio"></Link>
-            <Link to ="/about/bio"></Link>
-            <Link to ="/contact"></Link>
+        <div id="nav">
+            <Link to="/" >Home</Link>
+            <Link to="/Colors">Colors</Link>
+            <Link to ="/Decks">Decks and Sleeves</Link>
+          
+          
+    
 
         </div>
     )

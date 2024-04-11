@@ -1,44 +1,32 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './components/App.jsx'
+import Colors from './components/Colors.jsx'
 import Home from './components/Home.jsx'
-import About from './components/About.jsx'
+import Decks from './components/Decks.jsx'
+import App from './components/App.jsx'
 import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
-import Contact from './components/Contact.jsx'
-import Portfolio from './components/Portfolio.jsx'
 
 const routes = [
   {
     path: "/",
-    element: <App />,
+    element: < App/>,
     children: [
+
       {
         index: true,
-        element: <Home />
+        element: <Home />,
       },
       {
-        path: "about",
-        element: <About />,
-        children: [
-          {
-            path: 'portfolio',
-            element: <Portfolio />
-          },
-          {
-            path: 'portfolio/:id',
-            element: <PortfolioItem />
-          },
-          {
-            path: 'bio',
-            element: <Bio />
-          },
-        ]
+        path: "Colors",
+        element: <Colors />,
       },
       {
-        path: "contact",
-        element: <Contact />
+        path: 'decks',
+        element: <Decks />
       },
+  
+      
     ]
   }
 ]
