@@ -1,9 +1,13 @@
 import DeckContainer from "./DeckContainer"
+
+
+
 function Decks ({decks, setDecks, mappedDecks, name}){
-    // console.log(decks)
-    // this needs to populate with the multiple decks in 
-// const mappedDecks = decks.map (deck =>
-//     {return <Decks key={deck.id} decks ={deck}/>})
+  
+
+
+
+
 
     return(
     <> 
@@ -12,7 +16,8 @@ function Decks ({decks, setDecks, mappedDecks, name}){
         <div id="container" > {mappedDecks}{name}this is where you would house the deck imgses
         </div>
         
-     <form>
+     {/* <form id="deck-form">
+        <h2>Add A New Deck</h2>
     <label htmlFor="name">Deck Name</label>   
     <input></input> 
 
@@ -22,7 +27,7 @@ function Decks ({decks, setDecks, mappedDecks, name}){
     <label htmlFor="image_Url">Deck Sleeve Image</label>   
     <input></input> 
     <input type="submit" value="Add Deck"/>
-    </form>
+    </form> */}
 
     
     </>)

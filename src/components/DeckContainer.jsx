@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import Decks from "./Decks";
-
+import DeckForm from "./DeckForm";
 function DeckContainer(){
 
     const [decks, setDecks] = useState([]) 
+   
     useEffect(()=>{
         fetch('http://localhost:3000/Decks')
         .then (response => response.json())
@@ -20,13 +21,9 @@ function DeckContainer(){
             
  
 return(<>
-
+<DeckForm decks={decks} setDecks = {setDecks}/>
 <Decks decks={decks} setDecks ={setDecks} mappedDecks={mappedDecks}/>
-
 </>
-
-)
-
-}
+)}
 
 export default DeckContainer
