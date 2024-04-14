@@ -4,6 +4,7 @@ import Colors from './components/Colors.jsx'
 import Home from './components/Home.jsx'
 import Decks from './components/Decks.jsx'
 import App from './components/App.jsx'
+import DeckContainer from './components/DeckContainer.jsx'
 import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 
@@ -23,7 +24,7 @@ const routes = [
       },
       {
         path: 'decks',
-        element: <Decks />
+        element: <DeckContainer />
       },
   
       
