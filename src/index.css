@@ -2,7 +2,6 @@
 .nav{
  display: flex; 
  align-items: center;
- 
  position: relative; 
  justify-content: space-around;
  height: var(--header-height);
@@ -19,6 +18,12 @@ background-color: rgb(225, 30, 30);
   text-decoration: none;
   justify-content: space-around;
   position: relative;
+  
+}
+.nav a:hover {
+  color: black;
+  background-color: grey;
+
 }
 /* use this for the decks contiainer so they wrap in side its container */
 #container {
@@ -41,4 +46,27 @@ background-color: rgb(225, 30, 30);
     justify-content: center;
     flex-direction: column;
     text-align: center;
+   }
+   /* this is the back ground csss for home container*/
+   .home-container{
+    width: 100vw; /* 100% of the viewport width */
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-image: url("src/assets/HomeComponentBG.avif");
+   }
+
+   .home-header{
+    align-items: center;
+    display: flex;
+   }
+
+  /* this is the background css for the colors component */
+   .color-container{   
+    width: 100vw; /* 100% of the viewport width */
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-image: url("src/assets/COLORS BG the one.jpeg");
+
    }
