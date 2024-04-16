@@ -26,17 +26,26 @@ function DeckForm({decks, setDecks, createDeck}){
 
     })
     })
-    .then (response => response.json())
-    .then (newDeck => createDeck(newDeck))
+    // .then (response => response.json())
+    // .then (newDeck => createDeck(newDeck))
+    .then((response) => response.json())
+    .then((newDeck) => {
+      createDeck(newDeck);
+
+      // Reset the state variables
+      setName("");
+      setColor("");
+      setImage("");
+    });
 
 } 
 
-// move this to deckcontainer form and pass this down 
-function createDeck (newDeck){
-    // console.log(decks)
-  setDecks  ([...decks, newDeck])
+// // move this to deckcontainer form and pass this down 
+// function createDeck (newDeck){
+//     // console.log(decks)
+//   setDecks  ([...decks, newDeck])
     
-}
+// }
 
 
 
@@ -49,13 +58,13 @@ function createDeck (newDeck){
     <h2>Add A New Deck</h2>
 
     <label htmlFor="name">Deck Name</label>   
-    <input onChange={event =>setName(event.target.value)}name="name"></input> 
+    <input onChange={event =>setName(event.target.value)}value ={name}></input> 
 
     <label htmlFor="color">Color</label>   
     <input onChange ={event => setColor(event.target.value)} value = {color}></input> 
 
     <label htmlFor="image_Url">Sleeve Image</label>   
-    <input onChange ={event => setImage(event.target.value)}></input> 
+    <input onChange ={event => setImage(event.target.value)} value = {image}></input> 
 
     <input type="submit" value="Add Deck"/>
     </form>

@@ -19,9 +19,13 @@ function DeckContainer(){
            </div>})
          
             
- 
+         function createDeck (newDeck){
+            // console.log(decks)
+          setDecks  ([...decks, newDeck])
+            
+        }
 return(<>
-<DeckForm decks={decks} setDecks = {setDecks}/>
+<DeckForm decks={decks} setDecks = {setDecks} createDeck={createDeck}/>
 <Decks decks={decks} setDecks ={setDecks} mappedDecks={mappedDecks}/>
 </>
 )}
