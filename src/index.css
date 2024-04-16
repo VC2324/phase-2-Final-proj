@@ -1,7 +1,24 @@
 
-#nav{
-  display: flex;
-  flex-direction: column;
+.nav{
+ display: flex; 
+ align-items: center;
+ 
+ position: relative; 
+ justify-content: space-around;
+ height: var(--header-height);
+ margin: 1rem;
+font-size: 20px;
+background-color: rgb(225, 30, 30);
+
+
+
+}
+ /* whats the difference between <a> tag and the link tag ? in terms of css */
+.nav a {
+  color:whitesmoke;
+  text-decoration: none;
+  justify-content: space-around;
+  position: relative;
 }
 /* use this for the decks contiainer so they wrap in side its container */
 #container {
@@ -9,7 +26,7 @@
   flex-wrap: wrap;
   gap: 5vw
   }
-
+/* this is the individual deck sleeves */
 #container img {
   display: flex;
   flex-wrap: wrap;
