@@ -13,9 +13,8 @@ function DeckContainer(){
  
          const mappedDecks = decks.map (deck =>
             {return <div id="decks" key={deck.id}><img src = {deck.image} key={deck.id}/>
-           {deck.name} 
-           <br></br>
-          Color: {deck.color}
+          <p className="p-deck-cn"> {deck.name} </p>
+         <p className="p-deck-cn"> Color: {deck.color}</p>
            </div>})
          
             

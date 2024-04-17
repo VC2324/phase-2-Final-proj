@@ -55,7 +55,7 @@ function DeckForm({decks, setDecks, createDeck}){
 <>
     <form onSubmit={handleSubmit} id="deck-form">
         
-    <h2>Add A New Deck</h2>
+    <h1 >Add A New Deck To Your Collection</h1>
 
     <label htmlFor="name">Deck Name</label>   
     <input onChange={event =>setName(event.target.value)}value ={name}></input> 

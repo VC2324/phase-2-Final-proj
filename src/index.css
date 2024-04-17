@@ -49,11 +49,12 @@ background-color: rgb(225, 30, 30);
    }
    /* this is the back ground csss for home container*/
    body{
-    width: 100vw; /* 100% of the viewport width */
+    width: 100vw;
     height: 100vh;
     background-position: center;
     background-size: cover;
     background-image: url("src/assets/HomeComponentBG.avif");
+    margin: 0;
    }
 
    #home-header {
@@ -72,13 +73,13 @@ background-color: rgb(225, 30, 30);
   }
 
   /* this is the background css for the colors component */
- body{   
+  .home-container{   
     width: 100vw; /* 100% of the viewport width */
     height: 100vh;
     background-position: center;
     background-size: cover;
     background-image: url("src/assets/COLORS BG the one.jpeg");
-
+border: 1px solid black;
    }
 
    .homeh2{
@@ -126,6 +127,7 @@ background-color: rgb(225, 30, 30);
    1px -1px 0 black,
   -1px 1px 0 black,
    1px 1px 0 black;}
+
    .h-blue{
     font-size: 25px;
    text-align: center;
@@ -137,9 +139,154 @@ background-color: rgb(225, 30, 30);
    text-shadow: 0 0 0 black;
    /* Add a thin black border around the text */
    
-   
-  }
+   }
 
+   #p-blue{color: #00CCFF;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    /* Horizontal centering */
+    align-items: center; /* Vertical centering */
+   
+    text-shadow: 0 0 0 black, 
+
+   }
+
+#h-li-blue{font-size: 20px;
+  text-align: center;
+  display: flex;
+  /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+ }
+
+ .h-white{
+  font-size: 25px;
+ text-align: center;
+ display: flex;
+ justify-content: center; /* Horizontal centering */
+ align-items: center; /* Vertical centering */
+ text-decoration: underline;
+ color: #ededa1;
+ text-shadow: 0 0 0 black;
+ /* Add a thin black border around the text */
+ 
+ }
+
+ #p-white{color: #ededa1;
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+ 
+  text-shadow: 0 0 0 black, 
+
+ }
+
+#h-li-white{font-size: 20px;
+text-align: center;
+display: flex;
+/* Horizontal centering */
+align-items: center; /* Vertical centering */
+}
+
+
+
+.h-black{
+  font-size: 25px;
+ text-align: center;
+ display: flex;
+ justify-content: center; /* Horizontal centering */
+ align-items: center; /* Vertical centering */
+ text-decoration: underline;
+ color: black;
+ 
+ /* Add a thin black border around the text */
+ 
+ }
+
+ #p-black{color: black;
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+ 
+  text-shadow: 0 0 0 black, 
+
+ }
+
+#h-li-black{font-size: 20px;
+text-align: center;
+display: flex;
+/* Horizontal centering */
+align-items: center; /* Vertical centering */
+}
+
+
+
+.h-red{
+  font-size: 25px;
+ text-align: center;
+ display: flex;
+ justify-content: center; /* Horizontal centering */
+ align-items: center; /* Vertical centering */
+ text-decoration: underline;
+ color: red;
+ 
+ /* Add a thin black border around the text */
+ 
+ }
+
+ #p-red{color: red;
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+ 
+  text-shadow: 0 0 0 black, 
+
+ }
+
+#h-li-red{font-size: 20px;
+text-align: center;
+display: flex;
+/* Horizontal centering */
+align-items: center; /* Vertical centering */
+}
+
+
+.h-green{
+  font-size: 25px;
+ text-align: center;
+ display: flex;
+ justify-content: center; /* Horizontal centering */
+ align-items: center; /* Vertical centering */
+ text-decoration: underline;
+ color: forestgreen;
+ 
+ /* Add a thin black border around the text */
+ 
+ }
+
+ #p-green{color: forestgreen;
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+ 
+  text-shadow: 0 0 0 black, 
+
+ }
+
+#h-li-green{font-size: 20px;
+text-align: center;
+display: flex;
+/* Horizontal centering */
+align-items: center; /* Vertical centering */
+}
 
 
    /* color symbols */
@@ -172,3 +319,31 @@ background-color: rgb(225, 30, 30);
       margin: 0 auto; /* Center the image horizontally */
       width: 150px; /* Set the width of the image */
       height: 150px; }
+
+
+
+#deck-form{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+#deck-form h1{
+  color: white;
+   font-size: 25px;
+   text-align: center;
+   display: flex;
+   justify-content: center; /* Horizontal centering */
+   align-items: center; /* Vertical centering */
+   text-decoration: underline;
+   text-shadow: -1px -1px 0 black,  
+   1px -1px 0 black,
+  -1px 1px 0 black,
+   1px 1px 0 black;}
+
+   #deck-form label {
+    font-size: 20px; /* Adjust the font size of the labels */
+    color: white; /* Set the text color to white */
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; /* Add a black border around the text */
+   }

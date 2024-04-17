@@ -5,7 +5,7 @@ import { Outlet } from "react-router-dom"
 
 function Home(){
     return(
-        <div className="home-container">
+        <div  className="home-container">
 
     <h1 id="home-header">Magic the Gathering</h1>
     
