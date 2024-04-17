@@ -5,7 +5,7 @@
  position: relative; 
  justify-content: space-around;
  height: var(--header-height);
- margin: 1rem;
+ margin: 0;
 font-size: 20px;
 background-color: rgb(225, 30, 30);
 
@@ -53,7 +53,7 @@ background-color: rgb(225, 30, 30);
     height: 100vh;
     background-position: center;
     background-size: cover;
-    background-image: url("src/assets/HomeComponentBG.avif");
+    /* background-image: url("src/assets/HomeComponentBG.avif"); */
     margin: 0;
    }
 
@@ -71,14 +71,24 @@ background-color: rgb(225, 30, 30);
     text-decoration: underline
     
   }
-
+  .color-container{   
+    display: block;
+    width: 100vw; /* 100% of the viewport width */
+    height: 100vh;
+   
+    background-position: center;
+    background-size: cover;
+    background-image: url("src/assets/ColorsComponentBF.jpeg");
+border: 1px solid black;
+background-repeat: repeat-y;
+   }
   /* this is the background css for the colors component */
   .home-container{   
     width: 100vw; /* 100% of the viewport width */
     height: 100vh;
     background-position: center;
     background-size: cover;
-    background-image: url("src/assets/COLORS BG the one.jpeg");
+    background-image: url("src/assets/HomeComponentBG.avif");
 border: 1px solid black;
    }
 
@@ -346,4 +356,19 @@ align-items: center; /* Vertical centering */
     font-size: 20px; /* Adjust the font size of the labels */
     color: white; /* Set the text color to white */
     text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; /* Add a black border around the text */
+   
+  }
+
+   .deck-page{
+    width: 100vw; /* 100% of the viewport width */
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-image: url("src/assets/Deck BG.jpeg");
+border: 1px solid black;
+
+   }
+
+   #deck-form{
+    background-color: aqua;
    }

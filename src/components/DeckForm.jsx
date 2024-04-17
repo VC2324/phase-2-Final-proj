@@ -1,24 +1,27 @@
 import React from "react";
 import { useState } from "react"
+
+//recieving createDecks for use later
 function DeckForm({decks, setDecks, createDeck}){
-    // console.log(decks)
+// uses useState to set these 3 name, color, image,
     const [name, setName] =useState("")
     const [color, setColor] =useState("")
     const [image, setImage] =useState("")
 
-
-    // now we need a post req within a handle submit fuction sothat we can post new deck
-//first need to make a new array decks 
-
+//function that handles submit
    function handleSubmit (event){
+    //using the event.preventDefault function  so that it doesnt rerender the whole page
     event.preventDefault()
-    // console.log('subin', name)
+/// this is the fetch post so that we can post data to our API
+// fetching data from our Restful API and using the POST method
     fetch("http://localhost:3000/Decks",{
     method:"POST",
     headers:{
         "Content-Type": 'application/json',
         "accept": 'application/json',
     },
+
+    //stringifying the specific fromat to post in api
     body: JSON.stringify({
         name: name,
         color : color,
@@ -26,9 +29,9 @@ function DeckForm({decks, setDecks, createDeck}){
 
     })
     })
-    // .then (response => response.json())
-    // .then (newDeck => createDeck(newDeck))
+    //then changing response to json
     .then((response) => response.json())
+   //.then new deck to createdeck calling back the newdeck function
     .then((newDeck) => {
       createDeck(newDeck);
 
@@ -40,24 +43,18 @@ function DeckForm({decks, setDecks, createDeck}){
 
 } 
 
-// // move this to deckcontainer form and pass this down 
-// function createDeck (newDeck){
-//     // console.log(decks)
-//   setDecks  ([...decks, newDeck])
-    
-// }
-
-
 
 
     return(
 
 <>
+    {/* using on submit property and calling in handleSubmit  */}
     <form onSubmit={handleSubmit} id="deck-form">
         
     <h1 >Add A New Deck To Your Collection</h1>
 
-    <label htmlFor="name">Deck Name</label>   
+    <label htmlFor="name">Deck Name</label> 
+    {/* using onChange  event and setName to the target value of name and  color image url   */}
     <input onChange={event =>setName(event.target.value)}value ={name}></input> 
 
     <label htmlFor="color">Color</label>   

@@ -1,6 +1,6 @@
 import DeckContainer from "./DeckContainer"
 
-
+//passing down mappedDecks and name
 
 function Decks ({decks, setDecks, mappedDecks, name}){
   
@@ -10,9 +10,9 @@ function Decks ({decks, setDecks, mappedDecks, name}){
 
 
     return(
-    <> 
-    <header><h1>Your Decks</h1></header>
-        <div></div>
+    <div className="deck-page"> 
+    <header><h1>Your Deck Collection</h1></header>
+      {/* using props mappedDecks and name */}
         <div id="container" > {mappedDecks}{name}
         </div>
         
@@ -30,7 +30,7 @@ function Decks ({decks, setDecks, mappedDecks, name}){
     </form> */}
 
     
-    </>)
+    </div>)
 }
 
 export default Decks
